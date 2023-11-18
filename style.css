@@ -6,7 +6,7 @@ body {
     align-items: center;
     background-color: #fff;
     background-image: url("bgg.jpg");    font-family: 'Montserrat', sans-serif; 
-               
+
 }  
 
   /* Style for the overlay */
@@ -26,22 +26,21 @@ body {
   background-size: cover;
 
   }
-      
+
 .container {
     justify-content: center;
     align-items: center;
     display:block;
-    
+
 }
 
 .container img {
-    
   width:  320px;
   height: 75px;
   justify-content: center;
   align-items: center;
-  padding: 15px 19px 15px 28px;   
-    
+  padding: 20px 19px 15px 28px;   
+
 }
 
 
@@ -52,40 +51,33 @@ body {
     justify-content: start;
 }
 
-.logo{
-    
-    justify-content: center;
-    align-items: center;
-    display:block;
-    
-}
+
 
 .logo img {
-    
+
     width: 250px;
     height: 140px; 
-    padding: 2px 60px 20px 70px;
+    padding: 25px 60px 30px 70px;
 }
 
 
 button {
     width: 300px;
-			color: #000;
-			background-color: white;
-			border-radius:8px;
-			font-size: 15px;
-			padding: 9px 10px;
-			cursor: pointer;
-			box-shadow: 2px 2px 1px grey;
-			font-family: 'Montserrat', sans-serif; 
-			margin: 0 auto;  		
-			position: relative;		 
+    color: #000;
+    border-radius:8px;
+    font-size: 15px;
+    padding: 9px 10px;
+    cursor: pointer;
+    box-shadow: 2px 2px 1px grey;
+    font-family: 'Montserrat', sans-serif; 
+    margin: 0 auto;                  
+    position: relative;                 
 }
 
 
 button:hover {
-			color: #2d63c8;
-			background-color: #ffffff;
+     color: #2d63c8;
+     background-color: #ffffff;
 }
 
 .modal {
@@ -99,10 +91,11 @@ button:hover {
     font-family: 'Montserrat', sans-serif;  
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
-  height: 100vh; 
-    
+    height: 100vh; 
+
   }
-  .modal-content {
+  
+.modal-content {
     background-color: white;
     width: 250px;
     padding: 15px;    
@@ -116,7 +109,7 @@ button:hover {
     font-size: 14px;
     font-family: 'Montserrat', sans-serif;
     }
-  
+
   .progress-bar-container {
     position: relative;
     width: 100%;
@@ -131,7 +124,7 @@ button:hover {
     background-color: #FB7701;
     transition: width 12.5s linear;
   }
-  
+
 
 @keyframes zoomIn {
   from {
@@ -165,7 +158,7 @@ button:hover {
     animation: zoomIn 0.4s;
     font-size: 14px;
     font-family: 'Montserrat', sans-serif;
-    
+
   }
   .box-buttons {
     display: flex;
@@ -173,7 +166,7 @@ button:hover {
     margin-top: 10px;
     background-color white;
   }
-  
+
     .close-btn, .ok-btn {
     padding: 10px 20px;
     cursor: pointer;
@@ -181,7 +174,7 @@ button:hover {
     border: none;
     color: black;
   }
-  
+
   input[type=text] {
   width: 100%;
   padding: 12px 20px;
@@ -190,10 +183,8 @@ button:hover {
   border: 2px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-  
+
   input[type=text]:focus {
     border-color: lightgrey;
   }
-  
-   
 
