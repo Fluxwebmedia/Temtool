@@ -2,19 +2,19 @@
 <head>
 <title>Temtool</title>
 <meta name="viewport" content="width=device-width initial-scale=1.0">
-  
+
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Nunito:wght@800&display=swap" rel="stylesheet">
 
 
-      
+
 </head>
 
 
 <body>
-       
+
        <!-- Overlay element -->
 <div id="overlay">
   <p></p>
@@ -23,24 +23,24 @@
     <div class="container">
     <img src="temtop.png" align="top" alt="">
     </div>
-    
+
       <div class="logo">
     <img src="temtoool.png" align="top" alt="">
     </div>
-     
-   
+
+
    <div class="selections">
           <button type="button" id="openBoxBtn">Generate New User</button>
-    
+
      <button type="button">Temu Game tips</button>
-    
+
      <button type="button">Clear Cache</button>
-    
+
      <button type="button">Settings</button>
-    
+
      <button type="button">Exit</button>
     </div>
-    
+
    <!-- Modal Box -->
 
 <div class="box" id="box">
@@ -68,7 +68,7 @@
   window.addEventListener('load', function() {
     // Get the overlay element
     var overlay = document.getElementById('overlay');
-    
+
     // Hide the overlay after 5 seconds
     setTimeout(function() {
       overlay.style.display = 'none';
@@ -77,37 +77,37 @@
 </script>
 
 <script>
-  
+
   const modal = document.getElementById("modal");
   const modalText = document.getElementById("modalText");
   const progressBar = document.querySelector(".progress-fill");
   const progconBar = document.querySelector(".progress-bar-container");
   const openLoxBtn = document.getElementById("openLoxBtn");
-  
+
   const randomTexts = ["Connecting to Temu database...", "Validating code...", "Code Validated! Connecting...", "Initializing Proxy...", "Generating new user account..."];
   let textIndex = 0;
 
 openLoxBtn.addEventListener("click", () => {
     modal.style.display = "block";
     box.style.display ="none";
- 
+
     setTimeout(() => {
       progressBar.style.width = "100%";
       changeText();
     }, 1000);
-    
+
     setTimeout(() => {
       modalText.textContent = "Logged In!";
       modalText.style.fontWeight = "bold";
     }, 15000); // Show "Logged In!" text after 15 seconds
-    
+
     setTimeout(() => {
-      modalText.textContent = "Open Temu App";
-      modalText.style.fontWeight = "bold";
-  modalText.insertAdjacentHTML("beforebegin", "New User Generated!!!");
-      progressBar.style.width = "100%";
-    }, 15000); // Show success message after 25 seconds
-    
+    modalText.innerHTML = '<button onclick="openTemuApp()" style="background-color: #FB7701; color: white; width:70%;">Open Temu App</button>';
+    modalText.insertAdjacentHTML("beforebegin", '<span style="font-weight: bold;">New User Generated!!!</span>');
+    progressBar.style.width = "100%";
+}, 15000);
+
+
     setTimeout(() => {
       modal.style.display = "block";
       progconBar.style.display = "none";
@@ -128,7 +128,7 @@ openLoxBtn.addEventListener("click", () => {
   const box = document.getElementById("box");
   const successModal = document.getElementById("successModal");
   const closeBtn = document.querySelector(".close-btn");
-  
+
   openBoxBtn.addEventListener("click", () => {
     box.style.display = "block";
   });
@@ -137,12 +137,12 @@ openLoxBtn.addEventListener("click", () => {
     box.style.display = "none";
   });
 
-  
+
    </script>
-   
-   
-   
-   
+
+
+
+
 </body>
 
 
